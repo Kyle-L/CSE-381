@@ -14,4 +14,4 @@ None yet.
 
 <a name="license"></a>
 ## License
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](GPL)
