@@ -10,7 +10,15 @@ This is the repository for the development of coding assignments for [CSE 381 Sy
 
 <a name="assignments"/></a>
 ## Coding Assignments
-None yet.
+- Exercises
+  - [Exercise 1](Exercises/Exercise1/)
+    - [Project Files](Exercises/Exercise1/exercise1)
+    - [Starter Files](Exercises/Exercise1/starter_files)
+    
+- Homeworks
+  - [Homework 1](Exercises/Exercise1/)
+    - [Project Files](Homeworks/Homework1/homework1)
+    - [Starter Files](Homeworks/Homework1/starter_files)
 
 <a name="license"></a>
 ## License
