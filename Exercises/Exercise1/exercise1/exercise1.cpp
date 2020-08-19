@@ -4,6 +4,7 @@
  *   2. Print some statistics about the nubers.
  *
  * Copyright (C) 2020 liererkt@miamioh.edu
+ * 
  */
 
 #include <boost/asio.hpp>
@@ -58,8 +59,8 @@ void process(std::istream& is, std::ostream& os) {
     for (std::string hdr; std::getline(is, hdr) && 
         !hdr.empty() && hdr != "\r";) {}
 
-    // The following loop iterates over all numbers in the HTTP response data
-    // summing all of them together and counting the number of them.
+    // The following loop iterates over all numbers in the HTTP response 
+    // payload summing all of them together and counting the number of numbers.
     for (int val; (is >> val); count++, sum += val) {}
     
     const float avg = sum * 1.f / count;

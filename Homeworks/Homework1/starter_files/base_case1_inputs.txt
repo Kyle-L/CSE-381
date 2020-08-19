@@ -1,0 +1,22 @@
+GET /http://www.users.miamioh.edu/raodm/ones.txt HTTP/1.1
+Host: localhost:34747
+Connection: close
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Fedora; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+DNT: 1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Cookie: None
+x-content-type-options: nosniff
+x-download-options: noopen
+x-frame-options: SAMEORIGIN
+x-permitted-cross-domain-policies: none
+x-rate-limit-remaining: 607.888723012289
+x-request-context-id: d87159c7-fa63-4bb5-90bf-ccd462ef0407
+x-request-cost: 0.37986338699465705
+x-request-processor: 05df28c34802064f8
+x-runtime: 0.428051
+x-session-id: 2162e6c0505c4749ca00654728fc3c66
+x-xss-protection: 1; mode=block

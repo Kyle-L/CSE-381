@@ -1,0 +1,7 @@
+GET /http://ceclnx01.cec.miamioh.edu/~raodm/miami_university.txt HTTP/1.1
+Host: os1.csi.miamioh.edu:34747
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+DNT: 1
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
