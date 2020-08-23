@@ -19,7 +19,7 @@ This is the repository for the development of coding assignments for [CSE 381 Sy
   - [Homework 1](Homeworks/Homework1/)
     - [Project Files](Homeworks/Homework1/homework1)
     - [Starter Files](Homeworks/Homework1/starter_files)
-- [Homework 2](Homeworks/Homework2/)
+  - [Homework 2](Homeworks/Homework2/)
     - [Project Files](Homeworks/Homework2/homework2)
     - [Starter Files](Homeworks/Homework2/starter_files)
 
