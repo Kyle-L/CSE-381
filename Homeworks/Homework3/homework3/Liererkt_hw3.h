@@ -45,7 +45,14 @@ public:
     void PrintTree(std::ostream& out, const int& pid);
     
 private:
+    /*
+     * A map to ease the lookup of PID <=> PPID.
+     */
     std::unordered_map<int, int> parentMap;
+    
+    /*
+     * A map to ease the lookup of PID <=> CMD.
+     */
     std::unordered_map<int, std::string> commandMap;
 };
 
