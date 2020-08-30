@@ -31,7 +31,7 @@ public:
     
     /**
      * Loads a process tree into memory.
-     * @param in 
+     * @param in A file stream of the processes.
      * @return 
      */
     void LoadTree(std::ifstream& in);
@@ -39,8 +39,8 @@ public:
     /**
      * Recursively prints the full hierarchy of processes (in top-down order) 
      * for a given PID of the in memory process tree to an ostream.
-     * @param out
-     * @param pid
+     * @param out An output stream where the hierarchy will be printed
+     * @param pid The PID where the top-down hierarchy will end.
      */
     void PrintTree(std::ostream& out, const int& pid);
     
