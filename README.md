@@ -31,7 +31,13 @@ This is the repository for the development of coding assignments for [CSE 381 Sy
   - [Homework 5](Homeworks/Homework5/)
     - [Project Files](Homeworks/Homework5/homework5)
     - [Starter Files](Homeworks/Homework5/starter_files)
-
+  - [Homework 6](Homeworks/Homework6/)
+    - [Project Files](Homeworks/Homework6/homework6)
+    - [Starter Files](Homeworks/Homework6/starter_files)
+  - [Homework 7](Homeworks/Homework7/)
+    - [Project Files](Homeworks/Homework7/homework7)
+    - [Starter Files](Homeworks/Homework7/starter_files)
+    
 <a name="license"></a>
 ## License
 [![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](LICENSE)
