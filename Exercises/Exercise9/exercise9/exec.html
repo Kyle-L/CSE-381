@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>Enter command and command-line arguments:</h3>
+    <form action="/cgi-bin/exec" method="get" target="results" 
+          enctype="application/x-www-form-urlencoded">
+      <p>Command to run (with arguments):
+      <input type="text" name="cmd"></p>
+      <input type="submit" value="Run command on server">
+    </form>
+    <hr>
+    <h3>Results from previous command are shown below:</h3>
+    <iframe name="results" style="border: 0 none; width: 100%;" height="500">
+    </iframe>
+  </body>
+</html>
+

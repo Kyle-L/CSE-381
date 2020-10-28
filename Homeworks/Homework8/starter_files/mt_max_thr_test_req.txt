@@ -1,0 +1,74 @@
+"trans=create&stock=0x01&amount=9" "Stock 0x01 created with balance = 9"
+"trans=create&stock=0x02&amount=12" "Stock 0x02 created with balance = 12"
+"trans=create&stock=0x03&amount=30" "Stock 0x03 created with balance = 30"
+"trans=create&stock=0x04&amount=40" "Stock 0x04 created with balance = 40"
+"run" 1 1
+
+"trans=create&stock=0x01" "Stock 0x01 already exists"
+"trans=create&stock=0x02" "Stock 0x02 already exists"
+"trans=create&stock=0x03" "Stock 0x03 already exists"
+"trans=create&stock=0x04" "Stock 0x04 already exists"
+"run" 4 2
+
+"trans=status&stock=0x01" "Balance for stock 0x01 = 9"
+"trans=status&stock=0x02" "Balance for stock 0x02 = 12"
+"trans=status&stock=0x05" "Stock not found"
+"trans=status&stock=0x03" "Balance for stock 0x03 = 30"
+"trans=status&stock=0x04" "Balance for stock 0x04 = 40"
+run 5 3
+
+"trans=buy&stock=0x01&amount=2" "Stock 0x01's balance updated"
+"trans=buy&stock=0x02&amount=2" "Stock 0x02's balance updated"
+"trans=sell&stock=0x02&amount=2" "Stock 0x02's balance updated"
+"trans=sell&stock=0x03&amount=5" "Stock 0x03's balance updated"
+"trans=buy&stock=0x02&amount=2" "Stock 0x02's balance updated"
+run 5 4
+
+"trans=buy&stock=0x01&amount=2" "Stock 0x01's balance updated"
+"trans=buy&stock=0x02&amount=2" "Stock 0x02's balance updated"
+"trans=sell&stock=0x03&amount=5" "Stock 0x03's balance updated"
+nowait 3 1
+
+chkThr 2
+
+"trans=status&stock=0x01" "Balance for stock 0x01 = 1"
+"trans=status&stock=0x02" "Balance for stock 0x02 = 2"
+run 2 2
+
+chkThr 2
+
+"trans=sell&stock=0x02&amount=2" "Stock 0x02's balance updated"
+"trans=sell&stock=0x01&amount=2" "Stock 0x01's balance updated"
+"trans=sell&stock=0x02&amount=2" "Stock 0x02's balance updated"
+"trans=sell&stock=0x01&amount=2" "Stock 0x01's balance updated"
+run 4 2
+
+chkThr 1
+
+"trans=status&stock=0x01" "Balance for stock 0x01 = 7"
+"trans=status&stock=0x02" "Balance for stock 0x02 = 10"
+"trans=status&stock=0x03" "Balance for stock 0x03 = 55"
+"trans=status&stock=0x04" "Balance for stock 0x04 = 40"
+run 2 1
+
+"trans=buy&stock=0x01&amount=4" "Stock 0x01's balance updated"
+"trans=buy&stock=0x02&amount=6" "Stock 0x02's balance updated"
+"trans=buy&stock=0x03&amount=25" "Stock 0x03's balance updated"
+"trans=buy&stock=0x04&amount=21" "Stock 0x04's balance updated"
+run 4 1
+
+"trans=buy&stock=0x01&amount=4" "Insufficient balance for stock 0x01"
+"trans=buy&stock=0x02&amount=5" "Insufficient balance for stock 0x02"
+"trans=buy&stock=0x03&amount=25" "Stock 0x03's balance updated"
+"trans=buy&stock=0x04&amount=21" "Insufficient balance for stock 0x04"
+nowait 4 1
+
+chkThr 4
+
+"trans=buy&stock=0x01&amount=5" "Insufficient balance for stock 0x01"
+"trans=buy&stock=0x02&amount=7" "Insufficient balance for stock 0x02"
+"trans=buy&stock=0x03&amount=1" "Stock 0x03's balance updated"
+"trans=buy&stock=0x04&amount=22" "Insufficient balance for stock 0x04" 
+nowait 4 1
+
+chkThr 7

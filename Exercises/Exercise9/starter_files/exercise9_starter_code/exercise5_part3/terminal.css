@@ -1,0 +1,28 @@
+/** A simple style sheet to make the display of terminal.html to look
+  a bit more interesting */
+
+body {
+    background: #555;
+    color: #fff;
+    font-family: monospace;
+}
+
+input {
+    margin-left: 10px;
+    padding: 5px;
+    background: #555;
+    color: #fff;
+    width: 90%;
+    font-family: monospace;
+}
+
+input:disabled {
+    border: none;
+    font-weight: bold;
+}
+
+pre {
+    margin-top: 0px;
+    font-size: 0.8em;
+}
+

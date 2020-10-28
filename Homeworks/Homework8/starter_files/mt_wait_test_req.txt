@@ -1,0 +1,40 @@
+"trans=create&stock=0x01&amount=10" "Stock 0x01 created with balance = 10"
+"trans=create&stock=0x02&amount=20" "Stock 0x02 created with balance = 20"
+"trans=create&stock=0x03&amount=30" "Stock 0x03 created with balance = 30"
+"trans=create&stock=0x04&amount=40" "Stock 0x04 created with balance = 40"
+"run" 1 1
+
+"trans=create&stock=0x01" "Stock 0x01 already exists"
+"trans=create&stock=0x02" "Stock 0x02 already exists"
+"trans=create&stock=0x03" "Stock 0x03 already exists"
+"trans=create&stock=0x04" "Stock 0x04 already exists"
+"run" 4 2
+
+"trans=status&stock=0x01" "Balance for stock 0x01 = 10"
+"trans=status&stock=0x02" "Balance for stock 0x02 = 20"
+"trans=status&stock=0x05" "Stock not found"
+"trans=status&stock=0x03" "Balance for stock 0x03 = 30"
+"trans=status&stock=0x04" "Balance for stock 0x04 = 40"
+run 5 3
+
+"trans=sell&stock=0x01&amount=31" "Stock 0x01's balance updated"
+"trans=buy&stock=0x01&amount=10" "Stock 0x01's balance updated"
+"trans=buy&stock=0x02&amount=17" "Stock 0x02's balance updated"
+"trans=buy&stock=0x01&amount=20" "Stock 0x01's balance updated"
+"trans=buy&stock=0x02&amount=19" "Stock 0x02's balance updated"
+"trans=sell&stock=0x02&amount=49" "Stock 0x02's balance updated"
+"trans=sell&stock=0x03&amount=75" "Stock 0x03's balance updated"
+"trans=buy&stock=0x03&amount=11" "Stock 0x03's balance updated"
+"trans=buy&stock=0x02&amount=8" "Stock 0x02's balance updated"
+"trans=status&stock=0x05" "Stock not found"
+"trans=sell&stock=0x04&amount=10" "Stock 0x04's balance updated"
+"trans=buy&stock=0x04&amount=9" "Stock 0x04's balance updated"
+"trans=buy&stock=0x03&amount=49" "Stock 0x03's balance updated"
+"run" 13 100
+
+"trans=status&stock=0x01" "Balance for stock 0x01 = 110"
+"trans=status&stock=0x02" "Balance for stock 0x02 = 520"
+"trans=status&stock=0x05" "Stock not found"
+"trans=status&stock=0x03" "Balance for stock 0x03 = 1530"
+"trans=status&stock=0x04" "Balance for stock 0x04 = 140"
+"run" 5 2
